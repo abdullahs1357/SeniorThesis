@@ -1,0 +1,92 @@
+
+Call:
+glm(formula = frequent_distress ~ EDUCA_f * INCOME_f + EXER + 
+    SMOKE + AGEG5YR + SEX, family = binomial(link = "logit"), 
+    data = model_df)
+
+Coefficients: (5 not defined because of singularities)
+                                   Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                        -13.9262  2399.5451  -0.006 0.995369    
+EDUCA_f9-11                         14.2920  2399.5452   0.006 0.995248    
+EDUCA_fHS_grad                      14.3098  2399.5451   0.006 0.995242    
+EDUCA_fSome_college                 15.0584  2399.5451   0.006 0.994993    
+EDUCA_fCollege_grad                 15.5283  2399.5447   0.006 0.994837    
+INCOME_fBin2                        14.4034  2399.5452   0.006 0.995211    
+INCOME_fBin3                        -1.2216  2725.8626   0.000 0.999642    
+INCOME_fBin4                        14.5287  2399.5455   0.006 0.995169    
+INCOME_fBin5                        12.8836  2399.5453   0.005 0.995716    
+INCOME_fBin6                        13.1193  2399.5453   0.005 0.995638    
+INCOME_fBin7                        -1.6742  3393.4689   0.000 0.999606    
+INCOME_fBin8                        -2.3561     1.3046  -1.806 0.070919 .  
+INCOME_fBin9                        -3.1131     1.3154  -2.367 0.017946 *  
+INCOME_fBin10                       -2.6299     1.3343  -1.971 0.048733 *  
+INCOME_fBin11                       -4.1003     1.6074  -2.551 0.010743 *  
+EXERNo                               0.6346     0.1715   3.699 0.000216 ***
+SMOKESome_days                      -0.1912     0.2741  -0.698 0.485378    
+SMOKENot_at_all                     -0.3857     0.1810  -2.131 0.033105 *  
+AGEG5YR2                            -1.2125     0.5779  -2.098 0.035879 *  
+AGEG5YR3                            -0.8737     0.5162  -1.692 0.090553 .  
+AGEG5YR4                            -0.5799     0.4769  -1.216 0.224007    
+AGEG5YR5                            -0.9709     0.4888  -1.986 0.047022 *  
+AGEG5YR6                            -0.7182     0.4914  -1.462 0.143843    
+AGEG5YR7                            -1.1316     0.4977  -2.274 0.022994 *  
+AGEG5YR8                            -1.1577     0.4873  -2.376 0.017520 *  
+AGEG5YR9                            -1.3262     0.4663  -2.844 0.004451 ** 
+AGEG5YR10                           -1.5512     0.4857  -3.193 0.001406 ** 
+AGEG5YR11                           -2.1946     0.4949  -4.434 9.23e-06 ***
+AGEG5YR12                           -2.3901     0.5254  -4.549 5.39e-06 ***
+AGEG5YR13                           -2.9553     0.6056  -4.880 1.06e-06 ***
+AGEG5YR14                           -1.4741     0.9593  -1.537 0.124357    
+SEXFemale                            0.4345     0.1566   2.774 0.005530 ** 
+EDUCA_f9-11:INCOME_fBin2           -13.6724  2399.5454  -0.006 0.995454    
+EDUCA_fHS_grad:INCOME_fBin2        -14.5682  2399.5453  -0.006 0.995156    
+EDUCA_fSome_college:INCOME_fBin2   -15.3127  2399.5454  -0.006 0.994908    
+EDUCA_fCollege_grad:INCOME_fBin2   -15.5727  2399.5450  -0.006 0.994822    
+EDUCA_f9-11:INCOME_fBin3             0.4788  2725.8628   0.000 0.999860    
+EDUCA_fHS_grad:INCOME_fBin3          1.1351  2725.8627   0.000 0.999668    
+EDUCA_fSome_college:INCOME_fBin3    -0.1427  2725.8628   0.000 0.999958    
+EDUCA_fCollege_grad:INCOME_fBin3     0.5413  2725.8624   0.000 0.999842    
+EDUCA_f9-11:INCOME_fBin4           -12.7257  2399.5458  -0.005 0.995769    
+EDUCA_fHS_grad:INCOME_fBin4        -14.4381  2399.5456  -0.006 0.995199    
+EDUCA_fSome_college:INCOME_fBin4   -15.3002  2399.5456  -0.006 0.994913    
+EDUCA_fCollege_grad:INCOME_fBin4   -15.9567  2399.5453  -0.007 0.994694    
+EDUCA_f9-11:INCOME_fBin5           -14.0939  2399.5456  -0.006 0.995314    
+EDUCA_fHS_grad:INCOME_fBin5        -13.6296  2399.5454  -0.006 0.995468    
+EDUCA_fSome_college:INCOME_fBin5   -14.3170  2399.5454  -0.006 0.995239    
+EDUCA_fCollege_grad:INCOME_fBin5   -15.2908  2399.5451  -0.006 0.994916    
+EDUCA_f9-11:INCOME_fBin6           -13.6669  2399.5455  -0.006 0.995456    
+EDUCA_fHS_grad:INCOME_fBin6        -13.4843  2399.5454  -0.006 0.995516    
+EDUCA_fSome_college:INCOME_fBin6   -14.2866  2399.5454  -0.006 0.995250    
+EDUCA_fCollege_grad:INCOME_fBin6   -15.6054  2399.5450  -0.007 0.994811    
+EDUCA_f9-11:INCOME_fBin7             2.1318  3393.4691   0.001 0.999499    
+EDUCA_fHS_grad:INCOME_fBin7          0.5726  3393.4690   0.000 0.999865    
+EDUCA_fSome_college:INCOME_fBin7    -0.3818  3393.4690   0.000 0.999910    
+EDUCA_fCollege_grad:INCOME_fBin7    -0.4786  3393.4687   0.000 0.999887    
+EDUCA_f9-11:INCOME_fBin8           -12.7588  1685.2047  -0.008 0.993959    
+EDUCA_fHS_grad:INCOME_fBin8          0.5177     1.5939   0.325 0.745333    
+EDUCA_fSome_college:INCOME_fBin8     0.8648     1.4772   0.585 0.558238    
+EDUCA_fCollege_grad:INCOME_fBin8         NA         NA      NA       NA    
+EDUCA_f9-11:INCOME_fBin9           -12.6463  1285.1035  -0.010 0.992148    
+EDUCA_fHS_grad:INCOME_fBin9          1.1750     1.5456   0.760 0.447123    
+EDUCA_fSome_college:INCOME_fBin9     1.8231     1.4879   1.225 0.220480    
+EDUCA_fCollege_grad:INCOME_fBin9         NA         NA      NA       NA    
+EDUCA_f9-11:INCOME_fBin10                NA         NA      NA       NA    
+EDUCA_fHS_grad:INCOME_fBin10         1.8618     1.6554   1.125 0.260704    
+EDUCA_fSome_college:INCOME_fBin10   -0.2487     1.7948  -0.139 0.889810    
+EDUCA_fCollege_grad:INCOME_fBin10        NA         NA      NA       NA    
+EDUCA_f9-11:INCOME_fBin11           21.6572  2399.5454   0.009 0.992799    
+EDUCA_fHS_grad:INCOME_fBin11       -11.6092   836.2698  -0.014 0.988924    
+EDUCA_fSome_college:INCOME_fBin11    1.9347     2.0294   0.953 0.340408    
+EDUCA_fCollege_grad:INCOME_fBin11        NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1374.2  on 1508  degrees of freedom
+Residual deviance: 1143.8  on 1442  degrees of freedom
+  (2436 observations deleted due to missingness)
+AIC: 1277.8
+
+Number of Fisher Scoring iterations: 15
+
