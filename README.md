@@ -78,24 +78,26 @@ Last Updated: October 2025
 Draft_Thesis_Submission_AbdullahSiddiqui/
 │
 ├── Code/
-│   ├── BRFSS2023_ANALYSIS.R
-│   ├── BRFSS2023_correlation.R
-│   ├── BRFSS2023_regression.R
-│   ├── BRFSS2023_regression_week5.R
-│   ├── BRFSS2023_regression_weeks6.7.R
-│   └── README.txt
+│ ├── BRFSS2023_ANALYSIS.R
+│ ├── BRFSS2023_correlation.R
+│ ├── BRFSS2023_regression.R
+│ ├── BRFSS2023_regression_week5.R
+│ ├── BRFSS2023_regression_weeks6.7.R
+│ └── README.txt
 │
 ├── Graphs/
-│   ├── figure1_correlation_heatmap.png
-│   ├── figure2_coefficient_plot.png
-│   ├── figure3_roc_curve.png
-│   └── etc.
+│ ├── figure1_correlation_heatmap.png
+│ ├── figure2_coefficient_plot.png
+│ ├── figure3_roc_curve.png
+│ └── (other visualizations)
 │
 ├── Tables/
-│   ├── logit_interaction_coeffs.csv
-│   ├── lm_interaction_coeffs.csv
-│   └── stratified_by_age_logit_coeffs.csv
+│ ├── logit_interaction_coeffs.csv
+│ ├── lm_interaction_coeffs.csv
+│ └── stratified_by_age_logit_coeffs.csv
 │
 ├── Documentation/
-│   ├── Abdullah_Siddiqui_Thesis_First_Draft.docx
-│   └── FutureDirectionsNotes.txt
+│ ├── Abdullah_Siddiqui_Thesis_First_Draft.docx
+│ └── FutureDirectionsNotes.txt
+│
+└── Graphics/
