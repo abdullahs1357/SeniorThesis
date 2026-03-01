@@ -1,0 +1,91 @@
+
+Call:
+lm(formula = MENTHLTH ~ EDUCA_f * INCOME_f + EXER + SMOKE + AGEG5YR + 
+    SEX, data = model_df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-18.861  -5.118  -2.263   1.227  28.248 
+
+Coefficients: (5 not defined because of singularities)
+                                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                        12.52004   10.25872   1.220 0.222502    
+EDUCA_f9-11                         5.52994   10.58973   0.522 0.601613    
+EDUCA_fHS_grad                      3.07354   10.34266   0.297 0.766379    
+EDUCA_fSome_college                 7.56699   10.41206   0.727 0.467496    
+EDUCA_fCollege_grad                 8.48326    8.78404   0.966 0.334327    
+INCOME_fBin2                        0.77155   10.65286   0.072 0.942272    
+INCOME_fBin3                       -0.68447   11.31783  -0.060 0.951784    
+INCOME_fBin4                        6.15327   11.32336   0.543 0.586929    
+INCOME_fBin5                       -0.47791   10.58571  -0.045 0.963997    
+INCOME_fBin6                       -1.59416   10.62843  -0.150 0.880793    
+INCOME_fBin7                       -5.10466   13.37753  -0.382 0.702826    
+INCOME_fBin8                       -8.49465    5.12335  -1.658 0.097530 .  
+INCOME_fBin9                       -9.54359    5.08876  -1.875 0.060936 .  
+INCOME_fBin10                      -8.86628    5.16063  -1.718 0.086000 .  
+INCOME_fBin11                     -10.96505    5.19181  -2.112 0.034859 *  
+EXERNo                              2.20843    0.54324   4.065 5.06e-05 ***
+SMOKESome_days                     -1.55982    0.96126  -1.623 0.104874    
+SMOKENot_at_all                    -2.02092    0.60534  -3.338 0.000864 ***
+AGEG5YR2                           -6.51530    2.12679  -3.063 0.002229 ** 
+AGEG5YR3                           -4.40335    1.97409  -2.231 0.025863 *  
+AGEG5YR4                           -5.39446    1.88322  -2.864 0.004237 ** 
+AGEG5YR5                           -6.34208    1.87230  -3.387 0.000725 ***
+AGEG5YR6                           -5.43661    1.91258  -2.843 0.004538 ** 
+AGEG5YR7                           -7.01586    1.89309  -3.706 0.000218 ***
+AGEG5YR8                           -6.84096    1.86956  -3.659 0.000262 ***
+AGEG5YR9                           -7.41618    1.80560  -4.107 4.23e-05 ***
+AGEG5YR10                          -8.65190    1.83630  -4.712 2.69e-06 ***
+AGEG5YR11                         -10.34875    1.79642  -5.761 1.02e-08 ***
+AGEG5YR12                         -10.61270    1.83214  -5.793 8.50e-09 ***
+AGEG5YR13                         -11.66706    1.87026  -6.238 5.81e-10 ***
+AGEG5YR14                          -6.44145    3.28140  -1.963 0.049836 *  
+SEXFemale                           1.41122    0.46281   3.049 0.002336 ** 
+EDUCA_f9-11:INCOME_fBin2            2.87822   11.42070   0.252 0.801063    
+EDUCA_fHS_grad:INCOME_fBin2        -0.51687   11.01332  -0.047 0.962574    
+EDUCA_fSome_college:INCOME_fBin2   -5.38681   11.21343  -0.480 0.631024    
+EDUCA_fCollege_grad:INCOME_fBin2   -2.87877    9.77036  -0.295 0.768309    
+EDUCA_f9-11:INCOME_fBin3           -4.19648   12.05850  -0.348 0.727883    
+EDUCA_fHS_grad:INCOME_fBin3         0.18258   11.63454   0.016 0.987482    
+EDUCA_fSome_college:INCOME_fBin3   -5.06356   11.78833  -0.430 0.667594    
+EDUCA_fCollege_grad:INCOME_fBin3   -3.98168   10.53880  -0.378 0.705626    
+EDUCA_f9-11:INCOME_fBin4            5.61672   12.20469   0.460 0.645435    
+EDUCA_fHS_grad:INCOME_fBin4        -3.87092   11.61024  -0.333 0.738876    
+EDUCA_fSome_college:INCOME_fBin4  -10.57716   11.67726  -0.906 0.365198    
+EDUCA_fCollege_grad:INCOME_fBin4  -10.94214   10.32326  -1.060 0.289345    
+EDUCA_f9-11:INCOME_fBin5           -5.69683   11.27642  -0.505 0.613497    
+EDUCA_fHS_grad:INCOME_fBin5        -2.75235   10.85214  -0.254 0.799823    
+EDUCA_fSome_college:INCOME_fBin5   -4.85995   10.92027  -0.445 0.656358    
+EDUCA_fCollege_grad:INCOME_fBin5   -8.12133    9.43982  -0.860 0.389752    
+EDUCA_f9-11:INCOME_fBin6           -2.65758   11.26859  -0.236 0.813591    
+EDUCA_fHS_grad:INCOME_fBin6         0.93695   10.87315   0.086 0.931343    
+EDUCA_fSome_college:INCOME_fBin6   -3.76098   10.95419  -0.343 0.731395    
+EDUCA_fCollege_grad:INCOME_fBin6   -6.46153    9.44080  -0.684 0.493816    
+EDUCA_f9-11:INCOME_fBin7            5.89165   13.98398   0.421 0.673589    
+EDUCA_fHS_grad:INCOME_fBin7         2.01224   13.57494   0.148 0.882180    
+EDUCA_fSome_college:INCOME_fBin7   -2.55791   13.63358  -0.188 0.851202    
+EDUCA_fCollege_grad:INCOME_fBin7   -2.13663   12.42289  -0.172 0.863468    
+EDUCA_f9-11:INCOME_fBin8           -0.01678    8.58012  -0.002 0.998440    
+EDUCA_fHS_grad:INCOME_fBin8         3.59354    5.75961   0.624 0.532779    
+EDUCA_fSome_college:INCOME_fBin8    1.73478    5.76102   0.301 0.763363    
+EDUCA_fCollege_grad:INCOME_fBin8         NA         NA      NA       NA    
+EDUCA_f9-11:INCOME_fBin9            0.08849    7.78194   0.011 0.990929    
+EDUCA_fHS_grad:INCOME_fBin9         4.29667    5.68425   0.756 0.449838    
+EDUCA_fSome_college:INCOME_fBin9    4.18383    5.72702   0.731 0.465177    
+EDUCA_fCollege_grad:INCOME_fBin9         NA         NA      NA       NA    
+EDUCA_f9-11:INCOME_fBin10                NA         NA      NA       NA    
+EDUCA_fHS_grad:INCOME_fBin10        5.39295    6.30025   0.856 0.392145    
+EDUCA_fSome_college:INCOME_fBin10   0.18567    6.00667   0.031 0.975345    
+EDUCA_fCollege_grad:INCOME_fBin10        NA         NA      NA       NA    
+EDUCA_f9-11:INCOME_fBin11          26.27807   10.60465   2.478 0.013327 *  
+EDUCA_fHS_grad:INCOME_fBin11        3.35701    6.41365   0.523 0.600765    
+EDUCA_fSome_college:INCOME_fBin11   0.79517    6.36077   0.125 0.900532    
+EDUCA_fCollege_grad:INCOME_fBin11        NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.666 on 1442 degrees of freedom
+  (2436 observations deleted due to missingness)
+Multiple R-squared:  0.1806,	Adjusted R-squared:  0.1431 
+F-statistic: 4.817 on 66 and 1442 DF,  p-value: < 2.2e-16
+

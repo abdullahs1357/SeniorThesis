@@ -1,0 +1,26 @@
+
+Call:
+glm(formula = frequent_distress ~ INCOME3 + EDUCA + EXERANY2 + 
+    SMOKDAY2 + ALCDAY4 + `_AGEG5YR`, family = binomial, data = df)
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.609e-01  5.279e-02   6.837 8.10e-12 ***
+INCOME3     -1.895e-01  3.547e-03 -53.418  < 2e-16 ***
+EDUCA        5.989e-02  8.621e-03   6.946 3.75e-12 ***
+EXERANY2     5.605e-01  1.711e-02  32.768  < 2e-16 ***
+SMOKDAY2    -1.671e-01  9.270e-03 -18.021  < 2e-16 ***
+ALCDAY4     -4.033e-04  8.584e-05  -4.699 2.62e-06 ***
+`_AGEG5YR`  -1.747e-01  2.481e-03 -70.423  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 116021  on 127864  degrees of freedom
+Residual deviance: 105087  on 127858  degrees of freedom
+  (305458 observations deleted due to missingness)
+AIC: 105101
+
+Number of Fisher Scoring iterations: 5
+

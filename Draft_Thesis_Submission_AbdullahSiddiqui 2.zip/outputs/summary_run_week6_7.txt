@@ -1,0 +1,4 @@
+Logistic interaction model AUC = 0.731
+Observations used = 3945
+Confusion matrix saved to outputs/confusion_matrix_logit.txt
+Coefficient tables saved to tables/*.csv
